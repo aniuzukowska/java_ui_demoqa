@@ -25,7 +25,8 @@ public class RegistrationPage {
             stateValue = $("#stateCity-wrapper"),
             cityField = $("#city"),
             cityValue = $("#stateCity-wrapper"),
-            submitButton = $("#submit");
+            submitButton = $("#submit"),
+            mainTitle = $("header a");
 
     public RegistrationPage openPage() {
         step("Открываем страницу регистрации", () -> {
@@ -132,6 +133,12 @@ public class RegistrationPage {
     public void clickSubmit() {
         step("Нажимаем кнопку Submit", () -> {
             submitButton.click();
+        });
+    }
+
+    public void clickMainTitle() {
+        step("Кликаем по заголовку", () -> {
+            mainTitle.click();
         });
     }
 }

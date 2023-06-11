@@ -1,7 +1,7 @@
 package tests;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pages.RegistrationPage;
+import pages.*;
 import pages.components.RegistrationResultsModal;
 import utils.RandomStudent;
 
@@ -9,12 +9,16 @@ import static io.qameta.allure.Allure.step;
 
 public class DemoqaTest extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
+    MainPage mainPage = new MainPage();
+    TrainingPage trainingPage = new TrainingPage();
+    ElementsPage elementsPage = new ElementsPage();
+    FormsPage formsPage = new FormsPage();
     private final RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal();
     RandomStudent randomStudent = new RandomStudent();
 
     @Test
     @DisplayName("Заполнение формы регистрации студента")
-    void fillFormTest() {
+    void fillStudentRegistrationFormTest() {
         String
                 userFirstName = randomStudent.getRandomFirstName(),
                 userLastName = randomStudent.getRandomLastName(),
@@ -63,5 +67,36 @@ public class DemoqaTest extends TestBase {
                     .verifyResult("Picture", randomStudent.getFileName());
         });
     }
+
+    @Test
+    @DisplayName("Переход на главную страницу с формы регистрации студента")
+    void goToMainPageFromStudentRegistrationFormTest() {
+        registrationPage.openPage().clickMainTitle();
+        mainPage.verifyResultOpenMainPage();
+
+    }
+
+    @Test
+    @DisplayName("Переход на страницу с треннингами по клику на баннер на главной странице")
+    void goToTrainingPageFromMainPageTest() {
+        mainPage.openPage().clickBanner();
+        trainingPage.verifyResultOpenTrainingPage();
+
+    }
+
+    @Test
+    @DisplayName("Переход с главной страницы на страницу Elements")
+    void goToElementsFromMainPageTest() {
+        mainPage.openPage().cardElementsClick();
+        elementsPage.verifyResultOpenElementsPage();
+    }
+
+    @Test
+    @DisplayName("Переход с главной страницы на страницу Forms")
+    void goToFormsFromMainPageTest() {
+        mainPage.openPage().cardFormsClick();
+        formsPage.verifyResultOpenFormsPage();
+    }
+
 }
 
