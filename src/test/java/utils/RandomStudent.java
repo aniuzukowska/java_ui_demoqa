@@ -9,7 +9,7 @@ import java.util.Locale;
 public class RandomStudent {
     StudentRegistrationTestData studentRegistrationTestData = new StudentRegistrationTestData();
     public static Faker faker = new Faker(new Locale("en"));
-    public String picturePath = "picture.jpg";
+    public String pictureName = "picture.jpg";
 
     public String getRandomFirstName() {
         return faker.name().firstName();
@@ -88,12 +88,12 @@ public class RandomStudent {
         }
     }
 
-    public String getFullName() {
-        return "img/"+picturePath;
+    public String getFullPathName() {
+        return "img/"+pictureName;
     }
 
     public String getFileName() {
-        return picturePath;
+        return pictureName;
     }
 }
 
