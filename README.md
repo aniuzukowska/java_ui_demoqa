@@ -22,7 +22,7 @@
 <a name="Jenkins">
 
 ## Запуск автотестов из Jenkins
-Для удаленного запуска автотестов в <a href="https://jenkins.autotests.cloud/job/018-annazukowska-java-ui/" target="_blank">Jenkins</a> создана задача (job), настроена и связана с репозиторием в GitHub.
+Для удаленного запуска автотестов в <a href="https://jenkins.autotests.cloud/job/Students/job/018-annazukowska-java-ui" target="_blank">Jenkins</a> создана задача (job), настроена и связана с репозиторием в GitHub.
 
 <img width="1331" alt="image" src="https://github.com/aniuzukowska/java_ui_demoqa/assets/109241600/8c9ce281-1c37-4a16-803f-472de6fdfc5f">
 
