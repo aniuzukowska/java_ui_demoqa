@@ -16,8 +16,12 @@
 
 ## Тест-кейсы
   - Заполнение формы регистрации студента
-  - Тесты навигации по приложению
-
+  - Заполнение полей ввода на странице Elements/TextBox
+  - Редактирование FirstName в таблице на странице Elements/WebTables
+  - Выбор радио-кнопки на странице Elements/RadioButton
+  - Выбор чек-бокса на странице Elements/CheckBox
+  - Двойной клик по кнопке на странице Elements/Buttons
+  - Загрузка файла на странице Elements/Upload and Download
 
 <a name="Jenkins">
 
@@ -65,9 +69,9 @@
 ## Интеграция с Jira
 Настроена интеграция Allure TestOPS с <a href="https://jira.autotests.cloud/browse/HOMEWORK-754" target="_blank">Jira</a>. К задаче в Jira привязаны тест-кейсы и прогон с результатами тестирования из Allure TestOPS.
 
+<img width="1436" alt="image" src="https://github.com/aniuzukowska/java_ui_demoqa/assets/109241600/2c259651-16af-48f4-86a8-cf46a4d727c8">
+<img width="1430" alt="image" src="https://github.com/aniuzukowska/java_ui_demoqa/assets/109241600/98bdf41e-0fdb-4881-a755-da1ad0f3ecf2">
 
-<img width="1430" alt="image" src="https://github.com/aniuzukowska/java_ui_demoqa/assets/109241600/bf994acb-fd2e-430d-b11f-9e36e8ce23b9">
-<img width="1431" alt="image" src="https://github.com/aniuzukowska/java_ui_demoqa/assets/109241600/f328c619-09f0-45b3-bf42-35782d2e3539">
 
 
 
