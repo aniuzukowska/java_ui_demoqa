@@ -4,12 +4,12 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
-import pages.components.Calendar;
+import pages.components.CalendarСomponent;
 import com.codeborne.selenide.SelenideElement;
 
 
 public class RegistrationPage {
-    private final Calendar calendar = new Calendar();
+    private final CalendarСomponent calendar = new CalendarСomponent();
     private final SelenideElement
             firstNameInput = $("#firstName"),
             lastNameInput = $("#lastName"),
