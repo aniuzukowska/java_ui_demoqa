@@ -12,6 +12,7 @@ public class DemoqaTest extends TestBase {
     CheckBoxElementsPage checkBoxElementsPage = new CheckBoxElementsPage();
     RadioButtonElementsPage radioButtonElementsPage = new RadioButtonElementsPage();
     TextBoxElementsPage textBoxElementsPage = new TextBoxElementsPage();
+    ButtonsElementsPage buttonsElementsPage = new ButtonsElementsPage();
     private final RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal();
     RandomStudent randomStudent = new RandomStudent();
 
@@ -107,6 +108,15 @@ public class DemoqaTest extends TestBase {
                     .verifyResult("currentAddress", "Current Address :", userCurrentAddress)
                     .verifyResult("permanentAddress", "Permananet Address :", userPermanentAddress);
         });
+    }
+
+    @Test
+    @DisplayName("Двойной клик по кнопке на странице Elements/Buttons")
+    void doubleClickButtonElementsTest() {
+        buttonsElementsPage
+                .openPage()
+                .doubleClickButton()
+                .verifyDoubleClickResult("You have done a double click");
     }
 
     }
