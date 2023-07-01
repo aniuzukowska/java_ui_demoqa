@@ -24,7 +24,7 @@
 ## Запуск автотестов из Jenkins
 Для удаленного запуска автотестов в <a href="https://jenkins.autotests.cloud/job/Students/job/018-annazukowska-java-ui" target="_blank">Jenkins</a> создана задача (job), настроена и связана с репозиторием в GitHub.
 
-<img width="1331" alt="image" src="https://github.com/aniuzukowska/java_ui_demoqa/assets/109241600/8c9ce281-1c37-4a16-803f-472de6fdfc5f">
+<img width="1429" alt="image" src="https://github.com/aniuzukowska/java_ui_demoqa/assets/109241600/b95d4013-2d28-47db-afb8-8545b47716f4">
 
 
 
@@ -42,8 +42,9 @@
 ## Отчеты о прохождении тестов Allure report
 После завершения тестов также формируются отчеты <a href="https://jenkins.autotests.cloud/job/Students/job/018-annazukowska-java-ui/7/allure/" target="_blank">Allure report</a>, которые можно посмотреть со страницы задачи в Jenkins.
 
-<img width="1339" alt="image" src="https://github.com/aniuzukowska/java_ui_demoqa/assets/109241600/948e1d9d-9714-4a16-809d-588c42dfbed2">
-<img width="1338" alt="image" src="https://github.com/aniuzukowska/java_ui_demoqa/assets/109241600/672cefd0-5917-48c2-94b7-e43d7454a011">
+<img width="1430" alt="image" src="https://github.com/aniuzukowska/java_ui_demoqa/assets/109241600/5e5dee56-7ab0-4cc1-8ef0-1f6b5ec3cb76">
+<img width="1435" alt="image" src="https://github.com/aniuzukowska/java_ui_demoqa/assets/109241600/a76c9725-4070-4ecd-8e8b-e924dcaa12c4">
+
 
   
 
