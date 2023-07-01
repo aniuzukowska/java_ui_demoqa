@@ -9,10 +9,7 @@ import static io.qameta.allure.Allure.step;
 
 public class DemoqaTest extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
-    MainPage mainPage = new MainPage();
-    TrainingPage trainingPage = new TrainingPage();
-    ElementsPage elementsPage = new ElementsPage();
-    FormsPage formsPage = new FormsPage();
+    CheckBoxElementsPage checkBoxElementsPage = new CheckBoxElementsPage();
     private final RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal();
     RandomStudent randomStudent = new RandomStudent();
 
@@ -68,34 +65,15 @@ public class DemoqaTest extends TestBase {
     }
 
     @Test
-    @DisplayName("Переход на главную страницу с формы регистрации студента")
-    void goToMainPageFromStudentRegistrationFormTest() {
-        registrationPage.openPage().clickMainTitle();
-        mainPage.verifyResultOpenMainPage();
+    @DisplayName("Выбор чек-бокса на странице Elements/CheckBox")
+    void checkBoxElementsTest() {
+        checkBoxElementsPage
+                .openPage()
+                .toggleClick(0)
+                .setCheckBox("Desktop")
+                .verifyResultForCheckBox("Desktop");
+    }
 
     }
 
-    @Test
-    @DisplayName("Переход на страницу с треннингами по клику на баннер на главной странице")
-    void goToTrainingPageFromMainPageTest() {
-        mainPage.openPage().clickBanner();
-        trainingPage.verifyResultOpenTrainingPage();
-
-    }
-
-    @Test
-    @DisplayName("Переход с главной страницы на страницу Elements")
-    void goToElementsFromMainPageTest() {
-        mainPage.openPage().cardElementsClick();
-        elementsPage.verifyResultOpenElementsPage();
-    }
-
-    @Test
-    @DisplayName("Переход с главной страницы на страницу Forms")
-    void goToFormsFromMainPageTest() {
-        mainPage.openPage().cardFormsClick();
-        formsPage.verifyResultOpenFormsPage();
-    }
-
-}
 
