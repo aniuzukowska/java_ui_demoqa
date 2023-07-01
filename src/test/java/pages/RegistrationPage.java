@@ -136,9 +136,4 @@ public class RegistrationPage {
         });
     }
 
-    public void clickMainTitle() {
-        step("Кликаем по заголовку", () -> {
-            mainTitle.click();
-        });
-    }
 }
