@@ -18,6 +18,9 @@ public class RandomStudent {
     public String getRandomLastName() {
         return faker.name().lastName();
     }
+    public String getRandomFullName() {
+        return faker.name().fullName();
+    }
 
     public String getRandomEmail() {
         return faker.internet().emailAddress();

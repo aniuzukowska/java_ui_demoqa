@@ -11,6 +11,7 @@ public class DemoqaTest extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
     CheckBoxElementsPage checkBoxElementsPage = new CheckBoxElementsPage();
     RadioButtonElementsPage radioButtonElementsPage = new RadioButtonElementsPage();
+    TextBoxElementsPage textBoxElementsPage = new TextBoxElementsPage();
     private final RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal();
     RandomStudent randomStudent = new RandomStudent();
 
@@ -82,6 +83,30 @@ public class DemoqaTest extends TestBase {
                 .openPage()
                 .setRadioButton("Yes")
                 .verifyResultForRadioButton("Yes");
+    }
+
+    @Test
+    @DisplayName("Заполнение полей ввода на странице Elements/TextBox")
+    void textBoxElementsTest() {
+        String
+                userFullName = randomStudent.getRandomFullName(),
+                userEmail = randomStudent.getRandomEmail(),
+                userCurrentAddress = randomStudent.getRandomAddress(),
+                userPermanentAddress = randomStudent.getRandomAddress();
+
+        step("Заполняем форму TextBox", () -> {
+            textBoxElementsPage
+                    .openPage()
+                    .setFullName(userFullName)
+                    .setEmail(userEmail)
+                    .setCurrentAddress(userCurrentAddress)
+                    .setPermanentAddress(userPermanentAddress)
+                    .clickSubmit()
+                    .verifyResult("name", "Name:", userFullName)
+                    .verifyResult("email", "Email:", userEmail)
+                    .verifyResult("currentAddress", "Current Address :", userCurrentAddress)
+                    .verifyResult("permanentAddress", "Permananet Address :", userPermanentAddress);
+        });
     }
 
     }
