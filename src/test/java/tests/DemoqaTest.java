@@ -13,6 +13,7 @@ public class DemoqaTest extends TestBase {
     RadioButtonElementsPage radioButtonElementsPage = new RadioButtonElementsPage();
     TextBoxElementsPage textBoxElementsPage = new TextBoxElementsPage();
     ButtonsElementsPage buttonsElementsPage = new ButtonsElementsPage();
+    WebTablesPage webTablesPage = new WebTablesPage();
     private final RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal();
     RandomStudent randomStudent = new RandomStudent();
 
@@ -118,6 +119,17 @@ public class DemoqaTest extends TestBase {
                 .doubleClickButton()
                 .verifyDoubleClickResult("You have done a double click");
     }
+
+    @Test
+    @DisplayName("Редактирование FirstName в таблице на странице Elements/WebTables")
+    void editFirstNameWebTablesElementsTest() {
+        webTablesPage
+                .openPage()
+                .editFirstName("Alden", "Alden1")
+                .verifyResultEditedFirstName("Alden1");
+    }
+
+
 
     }
 
