@@ -10,6 +10,7 @@ import static io.qameta.allure.Allure.step;
 public class DemoqaTest extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
     CheckBoxElementsPage checkBoxElementsPage = new CheckBoxElementsPage();
+    RadioButtonElementsPage radioButtonElementsPage = new RadioButtonElementsPage();
     private final RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal();
     RandomStudent randomStudent = new RandomStudent();
 
@@ -72,6 +73,15 @@ public class DemoqaTest extends TestBase {
                 .toggleClick(0)
                 .setCheckBox("Desktop")
                 .verifyResultForCheckBox("Desktop");
+    }
+
+    @Test
+    @DisplayName("Выбор радио-кнопки на странице Elements/RadioButton")
+    void radioButtonElementsTest() {
+        radioButtonElementsPage
+                .openPage()
+                .setRadioButton("Yes")
+                .verifyResultForRadioButton("Yes");
     }
 
     }
