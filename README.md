@@ -62,7 +62,8 @@
 <a name="Jira">
 
 ## Интеграция с Jira
-Настроена интеграция Allure TestOPS с Jira. К задаче в Jira привязаны тест-кейсы и прогон с результатами тестирования из Allure TestOPS.
+Настроена интеграция Allure TestOPS с <a href="https://jira.autotests.cloud/browse/HOMEWORK-754" target="_blank">Jira</a>. К задаче в Jira привязаны тест-кейсы и прогон с результатами тестирования из Allure TestOPS.
+
 
 <img width="1430" alt="image" src="https://github.com/aniuzukowska/java_ui_demoqa/assets/109241600/bf994acb-fd2e-430d-b11f-9e36e8ce23b9">
 <img width="1431" alt="image" src="https://github.com/aniuzukowska/java_ui_demoqa/assets/109241600/f328c619-09f0-45b3-bf42-35782d2e3539">
