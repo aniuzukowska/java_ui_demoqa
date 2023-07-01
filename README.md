@@ -1,7 +1,7 @@
 # Проект автоматизации тестирования UI для веб-приложения demoqa.com
 
 <img width="1293" alt="image" src="https://github.com/aniuzukowska/java_ui_demoqa/assets/109241600/87ab626f-a758-4efa-a4f6-9c89e5e739d8">
-<a href="https://reqres.in" target="_blank">demoqa.com</a> - это тестовое веб-приложение, которое можно использовать для тренировки навыков тестирования.
+<a href="https://demoqa.com">demoqa.com</a> - это тестовое веб-приложение, которое можно использовать для тренировки навыков тестирования.
 
 ## Содержание
 + [Тест-кейсы](#Тесты)
