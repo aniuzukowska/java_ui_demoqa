@@ -33,7 +33,6 @@ public class DemoqaTest extends TestBase {
                 userAddress = randomStudent.getRandomAddress(),
                 userState = randomStudent.getRandomState(),
                 userCity = randomStudent.getRandomCity(userState);
-        System.out.println(userBirthDay);
 
         step("Заполняем форму регистрации", () -> {
                     registrationPage.openPage()

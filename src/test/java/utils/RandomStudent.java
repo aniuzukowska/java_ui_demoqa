@@ -9,6 +9,7 @@ import java.util.Locale;
 public class RandomStudent {
     StudentRegistrationTestData studentRegistrationTestData = new StudentRegistrationTestData();
     public static Faker faker = new Faker(new Locale("en"));
+    public String picturePath = "picture.jpg";
 
     public String getRandomFirstName() {
         return faker.name().firstName();
@@ -85,11 +86,11 @@ public class RandomStudent {
     }
 
     public String getFullName() {
-        return "img/picture.jpg";
+        return "img/"+picturePath;
     }
 
     public String getFileName() {
-        return "picture.jpg";
+        return picturePath;
     }
 }
 
