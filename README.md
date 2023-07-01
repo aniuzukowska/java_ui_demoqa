@@ -33,8 +33,7 @@
 ## Уведомление о результатах тестирования через Telegram-бот
 После завершения тестов приходит такое оповещение в Telegram с помощью заранее созданного Telegram-бота, привязанного к задаче в Jenkins.
 
-<img width="364" alt="image" src="https://github.com/aniuzukowska/java_ui_demoqa/assets/109241600/d0194a7c-ed3a-45de-a636-cd34f92862db">
-
+<img width="363" alt="image" src="https://github.com/aniuzukowska/java_ui_demoqa/assets/109241600/8ff7e507-1a45-4947-ba39-735badfe7cdf">
 
   
 
