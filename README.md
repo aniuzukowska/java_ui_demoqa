@@ -44,7 +44,7 @@
 <a name="Allure">
 
 ## Отчеты о прохождении тестов Allure report
-После завершения тестов также формируются отчеты <a href="https://jenkins.autotests.cloud/job/Students/job/018-annazukowska-java-ui/7/allure/" target="_blank">Allure report</a>, которые можно посмотреть со страницы задачи в Jenkins.
+После завершения тестов также формируются отчеты <a href="https://jenkins.autotests.cloud/job/Students/job/018-annazukowska-java-ui/8/allure/" target="_blank">Allure report</a>, которые можно посмотреть со страницы задачи в Jenkins.
 
 <img width="1430" alt="image" src="https://github.com/aniuzukowska/java_ui_demoqa/assets/109241600/5e5dee56-7ab0-4cc1-8ef0-1f6b5ec3cb76">
 <img width="1435" alt="image" src="https://github.com/aniuzukowska/java_ui_demoqa/assets/109241600/a76c9725-4070-4ecd-8e8b-e924dcaa12c4">
