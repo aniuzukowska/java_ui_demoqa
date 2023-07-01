@@ -14,6 +14,7 @@ public class DemoqaTest extends TestBase {
     TextBoxElementsPage textBoxElementsPage = new TextBoxElementsPage();
     ButtonsElementsPage buttonsElementsPage = new ButtonsElementsPage();
     WebTablesPage webTablesPage = new WebTablesPage();
+    UploadAndDownloadElementsPage uploadAndDownloadElementsPage = new UploadAndDownloadElementsPage();
     private final RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal();
     RandomStudent randomStudent = new RandomStudent();
 
@@ -46,7 +47,7 @@ public class DemoqaTest extends TestBase {
                             .setBirthDate(userBirthDay, userBirthMonth, userBirthYear)
                             .setSubject(userSubject)
                             .setHobby(userHobby)
-                            .uploadFile(randomStudent.getFullName())
+                            .uploadFile(randomStudent.getFullPathName())
                             .setAddress(userAddress)
                             .setState(userState)
                             .setCity(userCity)
@@ -129,7 +130,14 @@ public class DemoqaTest extends TestBase {
                 .verifyResultEditedFirstName("Alden1");
     }
 
-
+    @Test
+    @DisplayName("Загрузка файла на странице Elements/Upload and Download")
+    void uploadFileElementsTest() {
+        uploadAndDownloadElementsPage
+                .openPage()
+                .uploadFile("img/picture.jpg")
+                .verifyResultUpload("picture.jpg");
+    }
 
     }
 
