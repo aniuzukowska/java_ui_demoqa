@@ -1,11 +1,10 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
-import pages.components.RegistrationResultsModal;
+
 
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selectors.withText;
+
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
